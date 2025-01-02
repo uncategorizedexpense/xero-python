@@ -991,13 +991,13 @@ class Organisation(BaseModel):
             "None",
         ]  # noqa: E501
 
-        if _class:
-            if _class not in allowed_values:
-                raise ValueError(
-                    "Invalid value for `_class` ({0}), must be one of {1}".format(  # noqa: E501
-                        _class, allowed_values
-                    )
-                )
+        # if _class:
+        # if _class not in allowed_values:
+        #     raise ValueError(
+        #         "Invalid value for `_class` ({0}), must be one of {1}".format(  # noqa: E501
+        #             _class, allowed_values
+        #         )
+        #     )
 
         self.__class = _class
 
